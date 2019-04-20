@@ -19,3 +19,4 @@ AllCops:
   Exclude:
     - bin/**/*
     - vendor/**/*
+    - lib/generators/interage/query/*/templates/**/*.rb
