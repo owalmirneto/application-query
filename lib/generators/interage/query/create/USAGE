@@ -1,0 +1,8 @@
+Description:
+    Explain the generator
+
+Example:
+    rails g interage:query:create UsersByPerson User
+
+    This will create:
+        /app/queries/users_by_person_query.rb

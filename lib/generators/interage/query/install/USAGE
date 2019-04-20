@@ -1,0 +1,8 @@
+Description:
+    Explain the generator
+
+Example:
+    rails g interage:query:install
+
+    This will create:
+        /app/queries/application_query.rb
