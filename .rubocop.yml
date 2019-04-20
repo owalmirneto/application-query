@@ -1,0 +1,21 @@
+require:
+  - rubocop-rspec
+  - rubocop-performance
+
+Documentation:
+  Enabled: false
+
+Style/EmptyMethod:
+  Enabled: false
+
+Style/SymbolArray:
+  Enabled: false
+
+Style/WordArray:
+  Enabled: false
+
+AllCops:
+  TargetRubyVersion: 2.6
+  Exclude:
+    - bin/**/*
+    - vendor/**/*

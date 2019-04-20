@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+set -e
+
+echo -e "\e[1;36m$ bin/brakeman --force-scan \e[0m"
+bin/brakeman --force-scan
+
+echo -e "\e[1;36m$ bin/rubocop \e[0m"
+bin/rubocop
+
+echo -e "\e[1;36m$ bin/rspec \e[0m"
+bin/rspec
