@@ -1,0 +1,8 @@
+Version 0.1.0
+ - Cria build da gem
+ - Remove arquivos de template do check do rubocop
+ - Adiciona comando dos geradores na documentação
+ - Implementa geradores de classes query
+ - Implementar classe application query
+ - Cria gem application query
+
