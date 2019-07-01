@@ -4,6 +4,9 @@ source 'https://rubygems.org'
 
 gemspec
 
+# https://github.com/kaminari/kaminari#installation
+gem 'kaminari', '~> 1.1.1'
+
 group :development, :test do
   # https://github.com/rubocop-hq/rubocop#quickstart
   gem 'rubocop', '~> 0.67.2'
