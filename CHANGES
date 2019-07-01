@@ -1,3 +1,7 @@
+Version 0.1.1:
+ - Adiciona metodo empty_relation
+ - Adiciona gem kaminari
+
 Version 0.1.0
  - Cria build da gem
  - Remove arquivos de template do check do rubocop
