@@ -4,7 +4,7 @@ module Interage
   class ApplicationQuery
     PER_PAGE = 50
 
-    delegate :first, :find_by, :last, :count, :any?, to: :relation
+    delegate :first, :find_by, :last, :count, :limit, :any?, to: :relation
 
     def all
       includes.relation
@@ -22,12 +22,6 @@ module Interage
       all.page(page).per(PER_PAGE)
     end
 
-    def by_id(id)
-      @relation = relation.where(id: id) if id.present?
-
-      self
-    end
-
     def search_ilike_for(colums, term)
       return self unless term
 
@@ -39,12 +33,18 @@ module Interage
     end
 
     def between_dates(column, start_date, finish_date = nil)
-      start_date = Time.current if start_date.blank?
+      start_date = Date.current if start_date.blank?
       finish_date = start_date if finish_date.blank?
       range_date =
         start_date.to_date.beginning_of_day..finish_date.to_date.end_of_day
 
       @relation = relation.where(column => range_date)
+
+      self
+    end
+
+    def by_id(id)
+      @relation = relation.where(id: id) if id.present?
 
       self
     end
@@ -56,5 +56,11 @@ module Interage
     protected
 
     attr_accessor :relation
+
+    def empty_relation
+      @relation = relation.none
+
+      self
+    end
   end
 end
