@@ -15,7 +15,7 @@ module Interage
     end
 
     def find(id)
-      relation.find_by(id: id)
+      all.find_by(id: id)
     end
 
     def paginate(page = 1)
