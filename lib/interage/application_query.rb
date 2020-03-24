@@ -53,6 +53,12 @@ module Interage
       self
     end
 
+    def decorate
+      @relation = ActiveDecorator::Decorator.instance.decorate(relation)
+
+      self
+    end
+
     protected
 
     attr_accessor :relation
