@@ -7,6 +7,14 @@ module Interage
     delegate :first, :last, :find, :find_by, :find_by!, :pluck, :count, :limit,
              :any?, :exists?, to: :relation
 
+    def initialize
+      init_relation
+    end
+
+    def init_relation
+      raise NotImplementedError, 'subclass did not define #init_relation'
+    end
+
     def all
       includes.relation
     end
