@@ -11,6 +11,12 @@ module Interage
       includes.relation
     end
 
+    def distinct
+      @relation = relation.distinct
+
+      self
+    end
+
     def build(attributes = {})
       all.new(attributes)
     end
