@@ -15,7 +15,8 @@ Style/WordArray:
   Enabled: false
 
 AllCops:
-  TargetRubyVersion: 2.6
+  NewCops: enable
+  TargetRubyVersion: 2.7
   Exclude:
     - bin/**/*
     - vendor/**/*
