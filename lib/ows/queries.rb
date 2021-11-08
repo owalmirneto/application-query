@@ -1,15 +1,15 @@
 # frozen_string_literal: true
 
-require 'interage/query/version'
+require 'ows/queries/version'
 require 'active_support/core_ext/module'
 
 require 'kaminari'
 
-module Interage
-  module Query
+module OWS
+  module Queries
     class Error < StandardError
     end
   end
 
-  autoload :ApplicationQuery, 'interage/application_query'
+  autoload :ApplicationQuery, 'ows/application_query'
 end

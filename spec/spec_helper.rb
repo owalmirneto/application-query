@@ -1,7 +1,12 @@
 # frozen_string_literal: true
 
 require 'bundler/setup'
-require 'interage/query'
+require 'ows/queries'
+require 'pry'
+
+APP_ROOT = File.expand_path('..', __dir__)
+
+Dir["#{APP_ROOT}/spec/support/**/*.rb"].sort.each { |f| require f }
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure

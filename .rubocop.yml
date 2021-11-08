@@ -1,6 +1,7 @@
 require:
   - rubocop-rspec
   - rubocop-performance
+  - rubocop-rake
 
 Documentation:
   Enabled: false
@@ -20,4 +21,4 @@ AllCops:
   Exclude:
     - bin/**/*
     - vendor/**/*
-    - lib/generators/interage/query/*/templates/**/*.rb
+    - lib/generators/ows/query/*/templates/**/*.rb

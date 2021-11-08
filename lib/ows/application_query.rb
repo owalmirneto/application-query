@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module Interage
+module OWS
   class ApplicationQuery
     DEFAULT_PER_PAGE = 50
 
@@ -27,10 +27,6 @@ module Interage
 
     def build(attributes = {})
       all.new(attributes)
-    end
-
-    def find(id)
-      all.find_by(id: id)
     end
 
     def paginate(page = 1)

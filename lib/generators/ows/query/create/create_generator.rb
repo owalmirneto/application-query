@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module Interage
+module Ows
   module Query
     module Generators
       class CreateGenerator < Rails::Generators::NamedBase
