@@ -2,7 +2,7 @@
 
 module Interage
   class ApplicationQuery
-    PER_PAGE = 50
+    DEFAULT_PER_PAGE = 50
 
     delegate :first, :last, :find, :find_by, :find_by!, :pluck, :count, :limit,
              :any?, :exists?, to: :relation
@@ -34,7 +34,7 @@ module Interage
     end
 
     def paginate(page = 1)
-      all.page(page).per(PER_PAGE)
+      all.page(page).per(current_per_page)
     end
 
     def search_ilike_for(colums, term)
@@ -82,6 +82,10 @@ module Interage
       @relation = relation.none
 
       self
+    end
+
+    def current_per_page
+      DEFAULT_PER_PAGE
     end
   end
 end
