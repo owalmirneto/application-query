@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    ows-queries (0.1.5)
+    ows-queries (0.1.6)
       denki
 
 GEM
