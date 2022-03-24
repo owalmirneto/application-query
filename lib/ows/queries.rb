@@ -3,7 +3,7 @@
 require 'ows/queries/version'
 require 'active_support/core_ext/module'
 
-require 'kaminari'
+require 'denki'
 
 module OWS
   module Queries
