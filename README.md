@@ -5,7 +5,7 @@
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'ows-queries', '~> 0.1.5'
+gem 'ows-queries', '~> 0.1.6'
 ```
 
 And then execute:

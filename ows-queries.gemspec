@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = 'Application Query for OWS'
   spec.description   = 'Classes to encapsulate queries'
-  spec.homepage      = 'https://github.com/ows-apps/queries'
+  spec.homepage      = 'https://github.com/owalmirneto/queries'
   spec.licenses      = ['MIT']
 
   spec.required_ruby_version = '>= 2.7'
@@ -22,7 +22,7 @@ Gem::Specification.new do |spec|
 
     spec.metadata['homepage_uri'] = spec.homepage
     spec.metadata['source_code_uri'] = spec.homepage
-    spec.metadata['changelog_uri'] = "#{spec.homepage}/blob/master/CHANGES"
+    spec.metadata['changelog_uri'] = "#{spec.homepage}/blob/main/CHANGES"
   else
     raise 'RubyGems 2.0 or newer is required to protect against ' \
           'public gem pushes.'
@@ -41,5 +41,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rake', '~> 13.0'
   spec.add_development_dependency 'rspec', '~> 3.0'
 
-  spec.add_dependency 'kaminari', '>= 0'
+  spec.add_dependency 'denki', '>= 0'
 end
